@@ -64,6 +64,9 @@ TARGET_NO_KERNEL := false
 BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_USES_METADATA_PARTITION := true
 
+# System Image
+BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := erofs
+
 # Board uses A/B OTA.
 AB_OTA_UPDATER := true
 
@@ -115,7 +118,7 @@ ifneq ($(PRODUCT_NO_PRODUCT_PARTITION), true)
 ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
   BOARD_PRODUCTIMAGE_PARTITION_SIZE := 314572800
 endif
-BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := erofs
 else
 TARGET_COPY_OUT_PRODUCT := system/product
 endif
@@ -146,7 +149,7 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
 ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
 TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
 else
-BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := erofs
 endif
 ifeq ($(PRODUCT_NO_PRODUCT_PARTITION), true)
 # no system_ext partition as well
@@ -160,6 +163,9 @@ BOARD_GOOGLE_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     vendor \
     product \
     system_ext
+
+# Use erofs for vendor image.
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
 
 ifeq ($(PRODUCT_RETROFIT_DYNAMIC_PARTITIONS), true)
 # Normal Pixel 3 must retrofit dynamic partitions.
