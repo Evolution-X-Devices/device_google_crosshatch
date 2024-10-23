@@ -16,6 +16,12 @@
     "target_path": "vendor/google/blueline"
   },
   {
+    "repository": "Oneloutre/vendor_google_GoogleCamera",
+    "target_path": "vendor/google/GoogleCamera/b1c1",
+    "remote": "github-non-los",
+    "branch": "b1c1"
+  },
+  {
     "repository": "LineageOS/android_packages_apps_ElmyraService",
     "target_path": "packages/apps/ElmyraService",
     "remote": "github-non-los",
