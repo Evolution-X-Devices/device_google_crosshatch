@@ -14,9 +14,10 @@
     "target_path": "vendor/google/crosshatch",
     "remote": "github-non-los",
     "branch": "lineage-22.0"
+  },
   {
     "repository": "TheMuppets/proprietary_vendor_google_blueline",
-    "target_path": "vendor/google/sargo",
+    "target_path": "vendor/google/blueline",
     "remote": "github-non-los",
     "branch": "lineage-22.0"
   },
