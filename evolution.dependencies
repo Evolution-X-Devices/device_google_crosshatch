@@ -23,7 +23,7 @@
   },
   {
     "repository": "Oneloutre/vendor_google_GoogleCamera",
-    "target_path": "vendor/google/GoogleCamera/b1c1",
+    "target_path": "vendor/Camera/b1c1",
     "remote": "github-non-los",
     "branch": "b1c1"
   },
