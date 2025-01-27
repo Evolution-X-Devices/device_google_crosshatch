@@ -22,7 +22,7 @@
     "branch": "lineage-22.1"
   },
   {
-    "repository": "Oneloutre/vendor_google_GoogleCamera",
+    "repository": "Oneloutre/vendor_Camera",
     "target_path": "vendor/Camera/b1c1",
     "remote": "github-non-los",
     "branch": "b1c1"
@@ -31,6 +31,6 @@
     "repository": "LineageOS/android_device_google_gs-common",
     "target_path": "device/google/gs-common",
     "remote": "github-non-los",
-    "branch": "lineage-22.1Ã"
+    "branch": "lineage-22.1"
   }
 ]
