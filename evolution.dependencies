@@ -18,6 +18,12 @@
     "target_path": "vendor/google/blueline"
   },
   {
+    "repository": "Oneloutre/vendor_Camera",
+    "target_path": "vendor/Camera/b1c1",
+    "remote": "github-non-los",
+    "branch": "b1c1"
+  },
+  {
     "repository": "device_google_gs-common",
     "target_path": "device/google/gs-common"
   }

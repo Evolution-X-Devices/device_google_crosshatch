@@ -23,6 +23,9 @@ PRODUCT_PLATFORM := sdm845
 
 include device/google/crosshatch/device.mk
 
+# Ship GCam
+$(call inherit-product, vendor/Camera/b1c1/config.mk)
+
 # Target now uses mini_gapps
 TARGET_USES_MINI_GAPPS := true
 
